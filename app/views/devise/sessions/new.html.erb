@@ -22,7 +22,7 @@
           <div class="line"></div>
         </div>
 
-        <a href="#" class="d-block mt-4 text-decoration-none fw-bold">
+        <a href="#" class="d-block mt-2 text-decoration-none fw-bold">
           <%= image_tag("facebook.png", class: "facebook") %>
           Log in with Facebook
         </a>
@@ -33,7 +33,7 @@
           <p class="alert"><%= alert %></p>
         <% end %>
 
-        <a href="#" class="fs-6 d-block my-4 text-decoration-none"> Forgot password?</a>
+        <a href="#" class="fs-6 d-block my-2 text-decoration-none"> Forgot password?</a>
 
       </div>
     </div>
@@ -41,7 +41,7 @@
     <div class="card text-center py-2 mt-3" style="width: 23rem;">
       <div class="card-text">
         Don't have an account?
-        <a href="#" class="fs-6 my-4 text-decoration-none"> Sign up</a>
+        <%= link_to "Sign up", new_user_registration_path, class: "fs-6 my-4 text-decoration-none" %>
       </div>
     </div>
 
